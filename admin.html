@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin | MycsOnline</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="login-page">
+  <section class="login-shell">
+    <div class="login-left">
+      <div class="brand"><span>MY</span><b>MycsOnline</b></div>
+      <h1>Admin sign in</h1>
+      <p>Access Supabase powered admin control center.</p>
+
+      <form id="adminLoginForm" class="form-card">
+        <label>User ID</label>
+        <input id="adminUser" value="CHLPR8082F" required />
+        <label>Password</label>
+        <input id="adminPass" type="password" placeholder="Password" required />
+        <button class="btn btn-primary full" type="submit">Sign in</button>
+        <p id="adminMessage" class="message"></p>
+      </form>
+
+      <a href="index.html" class="small-link">← Back to home</a>
+    </div>
+    <div class="login-right">
+      <div class="big-icon">⚙️</div>
+      <p>Secure administration for MycsOnline LMS.</p>
+    </div>
+  </section>
+
+  <script src="js/config.js"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

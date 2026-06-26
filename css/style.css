@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Arial,sans-serif;background:#f3f6fb;color:#0f172a}
+a{text-decoration:none;color:inherit}
+button,input{font-family:inherit}
+.brand{display:flex;align-items:center;gap:12px;font-size:22px;font-weight:900}
+.brand span{width:48px;height:48px;border-radius:16px;background:linear-gradient(135deg,#2563eb,#0ea5e9);color:white;display:grid;place-items:center}
+.brand.white b{color:white}
+.btn{border:0;border-radius:12px;padding:13px 18px;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+.btn-primary{background:#2563eb;color:white;box-shadow:0 12px 24px rgba(37,99,235,.25)}
+.btn-light{background:white;color:#0f172a;border:1px solid #e5e7eb}
+.full{width:100%}
+.landing{min-height:100vh;padding:28px}
+.topnav{max-width:1180px;margin:auto;display:flex;justify-content:space-between;align-items:center;background:white;border:1px solid #e5e7eb;border-radius:24px;padding:16px 20px;box-shadow:0 10px 30px rgba(15,23,42,.08)}
+.topnav div:last-child{display:flex;gap:10px}
+.hero{max-width:1180px;margin:26px auto;background:linear-gradient(135deg,#071a33,#103f78);color:white;border-radius:36px;min-height:620px;padding:62px;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;box-shadow:0 24px 70px rgba(15,23,42,.22)}
+.hero h1{font-size:64px;line-height:.96;letter-spacing:-.07em;margin:18px 0}
+.hero p{color:#dbeafe;font-size:18px;line-height:1.7}
+.eyebrow{display:inline-flex;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:8px 12px;color:#e0f2fe;font-weight:900;font-size:12px;text-transform:uppercase}
+.hero-actions{display:flex;gap:12px;margin-top:26px}
+.hero-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);border-radius:26px;padding:26px;backdrop-filter:blur(20px)}
+.login-page{min-height:100vh;background:#f3f6fb}
+.login-shell{min-height:100vh;display:grid;grid-template-columns:1fr 1fr}
+.login-left{padding:80px 9vw;background:white}
+.login-left h1{font-size:54px;letter-spacing:-.06em;margin:70px 0 10px}
+.login-left p{color:#64748b;font-size:18px}
+.form-card{max-width:540px;margin-top:34px;display:flex;flex-direction:column;gap:14px}
+.form-card label{font-weight:900}
+.form-card input{height:58px;border:1px solid #dbeafe;border-radius:14px;padding:0 16px;font-size:16px;background:#f8fbff}
+.message{font-weight:800}
+.error{color:#dc2626!important}
+.small-link{display:block;margin-top:24px;color:#2563eb;font-weight:800}
+.login-right{background:#eef6ff;display:grid;place-items:center;text-align:center;color:#64748b}
+.big-icon{font-size:120px}
+.app-body{display:grid;grid-template-columns:300px 1fr;min-height:100vh}
+.sidebar{background:linear-gradient(180deg,#071a33,#103f78);padding:26px;color:white}
+.nav{width:100%;height:54px;border:0;border-radius:14px;background:transparent;color:#cbd5e1;text-align:left;padding:0 16px;margin-top:12px;font-weight:900}
+.nav.active,.nav:hover{background:#2f4b73;color:white}
+.main{min-width:0}
+.header{height:96px;background:white;border-bottom:1px solid #e5e7eb;display:flex;justify-content:space-between;align-items:center;padding:0 34px}
+.header small{color:#2563eb;font-weight:900;text-transform:uppercase}
+.header h1{margin:4px 0 0;font-size:30px;letter-spacing:-.05em}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:28px 34px}
+.card{background:white;border:1px solid #e5e7eb;border-radius:18px;padding:22px;box-shadow:0 10px 30px rgba(15,23,42,.08)}
+.card small{font-weight:900;color:#64748b;text-transform:uppercase;font-size:12px}
+.card b{display:block;font-size:34px;margin-top:8px}
+.panel{background:white;border:1px solid #e5e7eb;border-radius:22px;margin:0 34px 34px;padding:26px;box-shadow:0 10px 30px rgba(15,23,42,.08)}
+.course-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.course-card{border:1px solid #e5e7eb;border-radius:18px;padding:20px;background:#f8fafc}
+.course-card small{color:#2563eb;font-weight:900;text-transform:uppercase}
+.course-card h3{font-size:22px;margin:8px 0}
+.empty{border:1px dashed #cbd5e1;border-radius:18px;padding:24px;color:#64748b}
+pre{white-space:pre-wrap;background:#0f172a;color:#dbeafe;border-radius:14px;padding:18px}
+
+@media(max-width:900px){
+  .hero,.login-shell,.app-body{grid-template-columns:1fr}
+  .hero h1{font-size:44px}
+  .sidebar{min-height:auto}
+  .stats{grid-template-columns:1fr}
+}

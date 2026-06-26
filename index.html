@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY CS Online | V7</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="landing">
+    <nav class="topnav">
+      <div class="brand"><span>MY</span><b>MycsOnline</b></div>
+      <div>
+        <a class="btn btn-light" href="login.html">Student Login</a>
+        <a class="btn btn-primary" href="admin.html">Admin Login</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div>
+        <p class="eyebrow">V7 Supabase Cloud LMS</p>
+        <h1>Learn Company Law, ROC Compliance & practical filings.</h1>
+        <p>Premium learning platform powered by Supabase cloud database.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="login.html">Enter Student Portal</a>
+          <a class="btn btn-light" href="admin.html">Admin Control Center</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3>System Status</h3>
+        <p id="systemStatus">Checking Supabase...</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/supabase.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      const ok = await MYCS.testConnection();
+      document.getElementById("systemStatus").textContent = ok ? "Supabase connected successfully." : "Supabase connection failed.";
+    });
+  </script>
+</body>
+</html>

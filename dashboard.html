@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard | MycsOnline</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="app-body">
+  <aside class="sidebar">
+    <div class="brand white"><span>MY</span><b>MycsOnline</b></div>
+    <button class="nav active">Dashboard</button>
+    <button class="nav" onclick="logout()">Logout</button>
+  </aside>
+
+  <main class="main">
+    <header class="header">
+      <div>
+        <small>Student Portal</small>
+        <h1 id="welcomeName">Dashboard</h1>
+      </div>
+      <button class="btn btn-light" onclick="refreshDashboard()">Refresh</button>
+    </header>
+
+    <section class="stats">
+      <div class="card"><small>Assigned Courses</small><b id="courseCount">0</b></div>
+      <div class="card"><small>Status</small><b id="studentStatus">Active</b></div>
+      <div class="card"><small>Cloud</small><b>Supabase</b></div>
+    </section>
+
+    <section class="panel">
+      <h2>Your Courses</h2>
+      <div id="courseList" class="course-grid"></div>
+    </section>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

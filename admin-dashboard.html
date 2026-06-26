@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | MycsOnline</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="app-body">
+  <aside class="sidebar">
+    <div class="brand white"><span>MY</span><b>Admin OS</b></div>
+    <button class="nav active">Dashboard</button>
+    <button class="nav" onclick="logout()">Logout</button>
+  </aside>
+
+  <main class="main">
+    <header class="header">
+      <div>
+        <small>Admin Control Center</small>
+        <h1>MycsOnline V7</h1>
+      </div>
+      <button class="btn btn-light" onclick="loadAdminDashboard()">Sync</button>
+    </header>
+
+    <section class="stats">
+      <div class="card"><small>Students</small><b id="studentCount">0</b></div>
+      <div class="card"><small>Courses</small><b id="adminCourseCount">0</b></div>
+      <div class="card"><small>Modules</small><b id="moduleCount">0</b></div>
+      <div class="card"><small>Videos</small><b id="videoCount">0</b></div>
+    </section>
+
+    <section class="panel">
+      <h2>V7.1 Test Panel</h2>
+      <p>If these counts are loading from Supabase, V7.1 foundation is working.</p>
+      <pre id="adminStatus">Loading...</pre>
+    </section>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
